@@ -2,6 +2,8 @@
 
 main.js will execute the binary built from main.cpp,
 
+
+### Setup & Run
 ```
 > npm install
 > npm start   (the alias for "node main.js")
