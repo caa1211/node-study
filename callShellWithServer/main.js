@@ -17,21 +17,28 @@ function onRequest(request, response) {
     var queryData = url.parse(request.url, true).query;
     console.log("query data ", queryData);
 
-    if(pathname == "/"){
+    if(pathname == "/api"){
     // Async call to exec()
 	    var argv = queryData && queryData["argv"] || "";
 		
 		exec('./main ' + argv, function(status, output) {
 		  console.log('Exit status:', status);
-		  console.log('Program output:', output);
+		  
+		  var outputStr = argv + '! = ' + output;
+
+		  console.log(outputStr);
 
 		  response.writeHead(200, {"Content-Type": "text/plain"});
-		  response.write(output);
+		  response.write(outputStr);
 		  response.end();
 
 		});
+	}else {
+		  response.writeHead(200, {"Content-Type": "text/plain"});
+		  response.write("404 not found");
+		  response.end();
 	}
   
 }
 http.createServer(onRequest).listen(port, ip);
-console.log("Server has started: http://"+ip+":"+port);
+console.log("Server has started: http://"+ip+":"+port +"/api?argv=3");
