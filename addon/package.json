@@ -1,0 +1,8 @@
+{
+  "name": "caa-node-addon",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "node-gyp": "*"
+  }
+}
