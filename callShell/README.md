@@ -16,3 +16,15 @@ Note: Below command will build main.cpp to main
 ```
 
 (main will return factorial result)
+
+
+### For windows user, need more steps for setup
+
+1. Install gcc  (http://sourceforge.net/projects/mingw/?source=typ_redirect)
+
+2. Build binary by below command
+```
+npm run build
+```
+
+3. Modify main.js, replace './main ' by 'main.exe '
