@@ -3,9 +3,13 @@
 main.js will run a http server in http://127.0.0.1:1337,
 and the server will execute main with argv url parameter and send response to the browser.
 
-### Run Server
+### Setup
 ```
 > npm install
+```
+
+### Run Server
+```
 > npm start   (the alias for "node main.js")
 ```
 
