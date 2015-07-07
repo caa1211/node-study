@@ -2,9 +2,13 @@
 
 main.js will run a http server in http://127.0.0.1:1337
 
-### Run Server
+### Setup
 ```
 > npm install
+```
+
+### Run Server
+```
 > npm start   (the alias for "node main.js")
 ```
 
