@@ -8,17 +8,19 @@ main.js will run a http server in http://127.0.0.1:1337
 > npm install
 ```
 
-### 1. Run Static Server or open local html file directly (serve cube.html)
+##### 1. Run Static Server or open local html file directly (serve cube.html)
 ```
 > npm run static-server
 ```
 
-### 2. Run Api Server (serve api)
+##### 2. Run Api Server (serve api)
 ```
 > npm run api-server
 ```
 
-### Link to: http://localhost:8080/cube.html
+### Link: 
+
+http://localhost:8080/cube.html
 
 ### Response
 
